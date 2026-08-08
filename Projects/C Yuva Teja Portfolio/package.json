@@ -1,0 +1,11 @@
+{
+  "name": "c-yuva-teja-portfolio-root",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "npm --prefix \"C Yuva Teja Portfolio\" run dev",
+    "build": "npm --prefix \"C Yuva Teja Portfolio\" run build",
+    "start": "npm --prefix \"C Yuva Teja Portfolio\" run start",
+    "lint": "npm --prefix \"C Yuva Teja Portfolio\" run lint"
+  }
+}

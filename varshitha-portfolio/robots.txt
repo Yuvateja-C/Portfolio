@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://varshithakothakota.com/sitemap.xml
