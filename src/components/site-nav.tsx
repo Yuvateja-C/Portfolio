@@ -9,13 +9,7 @@ const NAV_ITEMS = [
   { id: "connect" as const, label: "Connect" },
 ];
 
-export function SiteNav({
-  active,
-  inverted,
-}: {
-  active: SectionId;
-  inverted: boolean;
-}) {
+export function SiteNav({ active, inverted }: { active: SectionId; inverted: boolean }) {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
@@ -39,9 +33,7 @@ export function SiteNav({
     <header
       className={cn(
         "fixed inset-x-0 top-0 z-50 transition-colors duration-300",
-        night
-          ? "text-paper"
-          : "text-ink",
+        night ? "text-paper" : "text-ink",
         scrolled && !open
           ? night
             ? "bg-night/88 backdrop-blur-md"
@@ -71,10 +63,7 @@ export function SiteNav({
               {item.label}
             </a>
           ))}
-          <Link
-            to="/resume"
-            className={cn("nav-link", night && "nav-link-night")}
-          >
+          <Link to="/resume" className={cn("nav-link", night && "nav-link-night")}>
             Resume
           </Link>
         </nav>
@@ -111,10 +100,7 @@ export function SiteNav({
       <div
         id="mobile-menu"
         hidden={!open}
-        className={cn(
-          "md:hidden",
-          night ? "bg-night text-paper" : "bg-paper text-ink",
-        )}
+        className={cn("md:hidden", night ? "bg-night text-paper" : "bg-paper text-ink")}
       >
         <nav
           className="page-shell flex min-h-[calc(100dvh-4rem)] flex-col gap-1 py-8"
@@ -133,7 +119,6 @@ export function SiteNav({
               <span className="font-display text-2xl font-semibold tracking-tight">
                 {section.label}
               </span>
-              
             </a>
           ))}
           <Link
@@ -144,10 +129,7 @@ export function SiteNav({
               night ? "border-line-night" : "border-line",
             )}
           >
-            <span className="font-display text-2xl font-semibold tracking-tight">
-              Resume
-            </span>
-            
+            <span className="font-display text-2xl font-semibold tracking-tight">Resume</span>
           </Link>
         </nav>
       </div>

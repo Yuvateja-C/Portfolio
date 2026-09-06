@@ -10,8 +10,7 @@ export const PROFILE = {
   headline: "I engineer Generative AI systems that retrieve, reason, and decide.",
   availability: "Open to internships, collaborations, and Generative AI roles.",
   now: "Building production-oriented RAG systems, local LLM products, and APIs that hold up outside a demo.",
-  gmailCompose:
-    "https://mail.google.com/mail/?view=cm&fs=1&to=yuvatejac123@gmail.com",
+  gmailCompose: "https://mail.google.com/mail/?view=cm&fs=1&to=yuvatejac123@gmail.com",
 } as const;
 
 export const SECTIONS = [
@@ -91,8 +90,7 @@ export const PROJECTS = [
     github: "https://github.com/Yuvateja-C/Memo_API",
     live: "https://creditsentinel-kkg7.onrender.com/docs",
     flow: ["Applicant", "Bureau", "Risk score", "Groq", "Memo JSON"],
-    proposition:
-      "A FastAPI microservice that writes explainable credit memos in under a second.",
+    proposition: "A FastAPI microservice that writes explainable credit memos in under a second.",
     problem:
       "Indian NBFC underwriting still depends on slow, inconsistent narrative memos. Decisions need speed, a deterministic risk score, and language a credit officer can defend.",
     solution:

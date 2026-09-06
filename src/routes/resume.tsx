@@ -1,11 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Download } from "lucide-react";
-import {
-  CAPABILITIES,
-  EXPERIENCE,
-  PROFILE,
-  PROJECTS,
-} from "@/lib/site";
+import { CAPABILITIES, EXPERIENCE, PROFILE, PROJECTS } from "@/lib/site";
 import resumePdf from "@/assets/resume.pdf.asset.json";
 
 export const Route = createFileRoute("/resume")({
@@ -13,9 +8,17 @@ export const Route = createFileRoute("/resume")({
   head: () => ({
     meta: [
       { title: "C Yuva Teja — Resume | Generative AI Engineer" },
-      { name: "description", content: "Resume of C Yuva Teja, Generative AI Engineer. Experience, selected projects, and capabilities in RAG systems, LLMs, and AI engineering." },
+      {
+        name: "description",
+        content:
+          "Resume of C Yuva Teja, Generative AI Engineer. Experience, selected projects, and capabilities in RAG systems, LLMs, and AI engineering.",
+      },
       { property: "og:title", content: "C Yuva Teja — Resume | Generative AI Engineer" },
-      { property: "og:description", content: "Resume of C Yuva Teja, Generative AI Engineer. Experience, selected projects, and capabilities in RAG systems, LLMs, and AI engineering." },
+      {
+        property: "og:description",
+        content:
+          "Resume of C Yuva Teja, Generative AI Engineer. Experience, selected projects, and capabilities in RAG systems, LLMs, and AI engineering.",
+      },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
@@ -70,9 +73,7 @@ function ResumePage() {
             {EXPERIENCE.map((role) => (
               <article key={role.org}>
                 <div className="flex flex-wrap items-baseline justify-between gap-2">
-                  <h3 className="font-display text-xl font-semibold">
-                    {role.role}
-                  </h3>
+                  <h3 className="font-display text-xl font-semibold">{role.role}</h3>
                   <span className="meta">{role.period}</span>
                 </div>
                 <p className="mt-1 text-small text-muted">{role.org}</p>
@@ -94,12 +95,8 @@ function ResumePage() {
           <ul className="mt-6 space-y-5">
             {PROJECTS.map((project) => (
               <li key={project.slug}>
-                <h3 className="font-display text-lg font-semibold">
-                  {project.name}
-                </h3>
-                <p className="mt-1 text-small leading-relaxed text-muted">
-                  {project.proposition}
-                </p>
+                <h3 className="font-display text-lg font-semibold">{project.name}</h3>
+                <p className="mt-1 text-small leading-relaxed text-muted">{project.proposition}</p>
                 <p className="mt-2 text-[0.7rem] tracking-[0.06em] text-muted uppercase">
                   {project.stack.join(" · ")}
                 </p>
@@ -114,9 +111,7 @@ function ResumePage() {
             {([CAPABILITIES.primary, CAPABILITIES.engineering, CAPABILITIES.toolkit] as const).map(
               (group) => (
                 <div key={group.title}>
-                  <h3 className="font-display text-base font-semibold">
-                    {group.title}
-                  </h3>
+                  <h3 className="font-display text-base font-semibold">{group.title}</h3>
                   <ul className="mt-2 space-y-1 text-small text-muted">
                     {group.items.map((item) => (
                       <li key={item.name}>{item.name}</li>

@@ -60,17 +60,11 @@ export function ConnectSection() {
         </div>
 
         <p className="mt-16 flex flex-wrap items-center gap-x-6 gap-y-2 text-small text-muted-on-night">
-          <span>
-            {PROFILE.shortName} · Generative AI Engineer
-          </span>
+          <span>{PROFILE.shortName} · Generative AI Engineer</span>
           <Link to="/resume" className="text-stone">
             Printable resume
           </Link>
-          <a
-            href={resumePdf.url}
-            download="C_Yuva_Teja_Resume.pdf"
-            className="text-stone"
-          >
+          <a href={resumePdf.url} download="C_Yuva_Teja_Resume.pdf" className="text-stone">
             Download resume (PDF)
           </a>
         </p>

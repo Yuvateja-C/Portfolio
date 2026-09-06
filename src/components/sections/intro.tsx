@@ -1,5 +1,6 @@
-import { ArrowDownRight } from "lucide-react";
+import { ArrowDownRight, Download } from "lucide-react";
 import { PROFILE } from "@/lib/site";
+import resumePdf from "@/assets/resume.pdf.asset.json";
 
 export function IntroSection() {
   return (
@@ -9,9 +10,7 @@ export function IntroSection() {
       aria-labelledby="intro-title"
     >
       <div className="page-shell flex flex-1 flex-col justify-end pb-16 pt-28 md:pb-20 md:pt-32">
-        <p className="section-index reveal text-muted-on-night">
-          01 — Introduction
-        </p>
+        <p className="section-index reveal text-muted-on-night">01 — Introduction</p>
 
         <h1
           id="intro-title"
@@ -35,19 +34,17 @@ export function IntroSection() {
             Explore My Work
           </a>
           <a
-            href={PROFILE.github}
-            target="_blank"
-            rel="noreferrer"
-            className="cta cta-ghost"
+            href={resumePdf.url}
+            download="C_Yuva_Teja_Resume.pdf"
+            className="cta cta-ghost inline-flex items-center gap-2"
           >
+            <Download className="size-4" aria-hidden="true" />
+            Download Resume
+          </a>
+          <a href={PROFILE.github} target="_blank" rel="noreferrer" className="cta cta-ghost">
             GitHub
           </a>
-          <a
-            href={PROFILE.linkedin}
-            target="_blank"
-            rel="noreferrer"
-            className="cta cta-ghost"
-          >
+          <a href={PROFILE.linkedin} target="_blank" rel="noreferrer" className="cta cta-ghost">
             LinkedIn
           </a>
         </div>

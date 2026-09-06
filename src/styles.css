@@ -287,11 +287,21 @@
   animation: reveal-up var(--motion-slow) var(--ease-out) forwards;
 }
 
-.reveal-delay-1 { animation-delay: 80ms; }
-.reveal-delay-2 { animation-delay: 160ms; }
-.reveal-delay-3 { animation-delay: 240ms; }
-.reveal-delay-4 { animation-delay: 320ms; }
-.reveal-delay-5 { animation-delay: 400ms; }
+.reveal-delay-1 {
+  animation-delay: 80ms;
+}
+.reveal-delay-2 {
+  animation-delay: 160ms;
+}
+.reveal-delay-3 {
+  animation-delay: 240ms;
+}
+.reveal-delay-4 {
+  animation-delay: 320ms;
+}
+.reveal-delay-5 {
+  animation-delay: 400ms;
+}
 
 @keyframes reveal-up {
   to {
@@ -546,4 +556,3 @@
     cursor: auto !important;
   }
 }
-

@@ -10,7 +10,6 @@ import {
 import { useEffect, type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
-import { reportLovableError } from "../lib/lovable-error-reporting";
 
 function NotFoundComponent() {
   return (
@@ -38,7 +37,7 @@ function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
   console.error(error);
   const router = useRouter();
   useEffect(() => {
-    reportLovableError(error, { boundary: "tanstack_root_error_component" });
+    console.error("[ErrorBoundary]", error);
   }, [error]);
 
   return (
@@ -78,20 +77,27 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { title: "C Yuva Teja — Generative AI Engineer" },
-      { name: "description", content: "Portfolio of C Yuva Teja, Generative AI Engineer building RAG platforms, local LLM products, and production AI APIs." },
+      {
+        name: "description",
+        content:
+          "Portfolio of C Yuva Teja, Generative AI Engineer building RAG platforms, local LLM products, and production AI APIs.",
+      },
       { name: "author", content: "C Yuva Teja" },
       { property: "og:title", content: "C Yuva Teja — Generative AI Engineer" },
-      { property: "og:description", content: "RAG platforms, local LLMs, and AI systems that retrieve, reason, and decide." },
+      {
+        property: "og:description",
+        content: "RAG platforms, local LLMs, and AI systems that retrieve, reason, and decide.",
+      },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:site", content: "@CYuvaTeja" },
     ],
     links: [
       {
         rel: "stylesheet",
         href: appCss,
       },
-      { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
+      { rel: "icon", href: "/favicon.svg", type: "image/svg+xml" },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       {

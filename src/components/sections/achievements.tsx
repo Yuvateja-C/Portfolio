@@ -10,9 +10,7 @@ export function AchievementsSection() {
             key={item.title}
             className="border-t border-line py-8 pr-0 sm:odd:pr-10 sm:even:border-l sm:even:pl-10"
           >
-            <span className="section-index">
-              {String(i + 1).padStart(2, "0")}
-            </span>
+            <span className="section-index">{String(i + 1).padStart(2, "0")}</span>
             <h3 className="mt-4 font-display text-xl font-semibold tracking-[-0.02em] text-balance">
               {item.title}
             </h3>

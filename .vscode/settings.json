@@ -1,0 +1,14 @@
+{
+  "files.associations": {
+    "*.lock": "plaintext",
+    "bun.lock": "plaintext"
+  },
+  "json.schemas": [],
+  "[plaintext]": {
+    "editor.formatOnSave": false
+  },
+  "css.validate": false,
+  "css.lint.unknownAtRules": "ignore",
+  "less.lint.unknownAtRules": "ignore",
+  "scss.lint.unknownAtRules": "ignore"
+}

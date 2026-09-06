@@ -41,7 +41,10 @@ export function ExperienceSection() {
                     key={item}
                     className="flex gap-2 text-[length:var(--text-body)] leading-relaxed text-pretty text-muted"
                   >
-                    <span aria-hidden="true" className="mt-[0.55em] h-1 w-1 shrink-0 rounded-full bg-accent" />
+                    <span
+                      aria-hidden="true"
+                      className="mt-[0.55em] h-1 w-1 shrink-0 rounded-full bg-accent"
+                    />
                     <span>{item}</span>
                   </li>
                 ))}

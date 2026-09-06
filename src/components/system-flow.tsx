@@ -1,12 +1,6 @@
 import { cn } from "@/lib/utils";
 
-export function SystemFlow({
-  steps,
-  night = true,
-}: {
-  steps: readonly string[];
-  night?: boolean;
-}) {
+export function SystemFlow({ steps, night = true }: { steps: readonly string[]; night?: boolean }) {
   return (
     <ol
       className={cn(
@@ -23,9 +17,7 @@ export function SystemFlow({
               night ? "border-line-night" : "border-line",
             )}
           >
-            <span className="meta opacity-70">
-              {String(i + 1).padStart(2, "0")}
-            </span>
+            <span className="meta opacity-70">{String(i + 1).padStart(2, "0")}</span>
             <span className="mt-3 font-display text-sm font-semibold tracking-tight text-pretty">
               {step}
             </span>

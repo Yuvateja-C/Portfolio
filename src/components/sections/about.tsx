@@ -10,16 +10,15 @@ export function AboutSection() {
             The Engineer
           </p>
           <p className="mt-6 max-w-2xl text-[length:var(--text-lead)] leading-relaxed text-pretty text-ink-soft">
-            I am C Yuva Teja, a Generative AI Engineer and B.Tech Computer
-            Science student at The Apollo University. I care about the distance between a model and a
-            working system — retrieval that holds context, prompts that return
-            structure, and APIs that stay up when a provider does not.
+            I am C Yuva Teja, a Generative AI Engineer and B.Tech Computer Science student at The
+            Apollo University. I care about the distance between a model and a working system —
+            retrieval that holds context, prompts that return structure, and APIs that stay up when
+            a provider does not.
           </p>
           <p className="mt-5 max-w-2xl text-[length:var(--text-body)] leading-relaxed text-pretty text-muted">
-            Generative AI interests me because it is not a feature. It is a new
-            material. Used well, it reads documents, evaluates ideas, and writes
-            decisions people can inspect. Used poorly, it is a chatbot with a
-            gradient. I build the former.
+            Generative AI interests me because it is not a feature. It is a new material. Used well,
+            it reads documents, evaluates ideas, and writes decisions people can inspect. Used
+            poorly, it is a chatbot with a gradient. I build the former.
           </p>
           <p className="mt-8 max-w-xl text-[length:var(--text-body)] leading-relaxed text-pretty text-ink-soft">
             <span className="meta text-accent">Now</span>
@@ -40,17 +39,15 @@ export function AboutSection() {
           <article>
             <h3 className="meta text-accent">What I Build</h3>
             <p className="mt-3 text-[length:var(--text-body)] leading-relaxed text-pretty text-ink-soft">
-              Practical Generative AI systems: RAG platforms, local LLM
-              products, structured generation APIs, and evaluation workflows
-              that survive messy model output.
+              Practical Generative AI systems: RAG platforms, local LLM products, structured
+              generation APIs, and evaluation workflows that survive messy model output.
             </p>
           </article>
           <article>
             <h3 className="meta text-accent">The Direction</h3>
             <p className="mt-3 text-[length:var(--text-body)] leading-relaxed text-pretty text-ink-soft">
-              Toward production-oriented AI products — reliable pipelines,
-              honest evaluation, and systems a team can ship. Early in the
-              career. Serious about the craft.
+              Toward production-oriented AI products — reliable pipelines, honest evaluation, and
+              systems a team can ship. Early in the career. Serious about the craft.
             </p>
           </article>
         </div>
@@ -59,9 +56,7 @@ export function AboutSection() {
       <ul className="mt-16 grid gap-8 border-t border-line pt-10 md:grid-cols-3">
         {PRINCIPLES.map((item) => (
           <li key={item.title}>
-            <h3 className="font-display text-lg font-semibold tracking-tight">
-              {item.title}
-            </h3>
+            <h3 className="font-display text-lg font-semibold tracking-tight">{item.title}</h3>
             <p className="mt-2 text-[length:var(--text-body)] leading-relaxed text-pretty text-muted">
               {item.body}
             </p>

@@ -113,9 +113,7 @@ function Stack({ chips, night }: { chips: readonly string[]; night?: boolean }) 
           key={chip}
           className={cn(
             "rounded-full px-3 py-1 text-[0.7rem] tracking-[0.08em] uppercase",
-            night
-              ? "border border-line-night text-stone"
-              : "border border-line text-muted",
+            night ? "border border-line-night text-stone" : "border border-line text-muted",
           )}
         >
           {chip}
@@ -125,15 +123,7 @@ function Stack({ chips, night }: { chips: readonly string[]; night?: boolean }) 
   );
 }
 
-function Links({
-  github,
-  live,
-  night,
-}: {
-  github: string;
-  live: string | null;
-  night?: boolean;
-}) {
+function Links({ github, live, night }: { github: string; live: string | null; night?: boolean }) {
   return (
     <div className="mt-8 flex flex-wrap gap-6">
       <a

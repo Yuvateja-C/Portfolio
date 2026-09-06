@@ -8,15 +8,10 @@ export function GithubSection() {
       <div className="grid gap-10 lg:grid-cols-12">
         <div className="lg:col-span-5">
           <p className="text-[length:var(--text-lead)] leading-snug text-pretty text-ink-soft">
-            The work lives in the open. Selected repositories below — the
-            engineering focus is Generative AI systems, not a statistics wall.
+            The work lives in the open. Selected repositories below — the engineering focus is
+            Generative AI systems, not a statistics wall.
           </p>
-          <a
-            href={PROFILE.github}
-            target="_blank"
-            rel="noreferrer"
-            className="cta cta-ink mt-8"
-          >
+          <a href={PROFILE.github} target="_blank" rel="noreferrer" className="cta cta-ink mt-8">
             Explore the Code →
           </a>
           <p className="mt-4 text-small text-muted">{PROFILE.githubHandle}</p>
@@ -36,9 +31,7 @@ export function GithubSection() {
                   <span className="block font-display text-lg font-semibold tracking-tight">
                     {repo.name}
                   </span>
-                  <span className="mt-1 block text-small text-muted">
-                    {repo.blurb}
-                  </span>
+                  <span className="mt-1 block text-small text-muted">{repo.blurb}</span>
                 </a>
                 <span className="mt-1 flex shrink-0 items-center gap-3 text-muted">
                   <span className="meta hidden sm:inline">{repo.lang}</span>

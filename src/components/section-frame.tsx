@@ -34,7 +34,6 @@ export function SectionFrame({
       <div className="page-shell py-[var(--space-section)]">
         <header className="mb-10 md:mb-16">
           <h2
-
             id={`${id}-title`}
             className="font-display text-[length:var(--text-section)] leading-[1.05] font-semibold tracking-[-0.03em] text-balance"
           >

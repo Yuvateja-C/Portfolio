@@ -17,9 +17,17 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       { title: "C Yuva Teja — Generative AI Engineer Portfolio" },
-      { name: "description", content: "Portfolio of C Yuva Teja, a Generative AI Engineer building RAG systems, local LLM products, and production AI APIs." },
+      {
+        name: "description",
+        content:
+          "Portfolio of C Yuva Teja, a Generative AI Engineer building RAG systems, local LLM products, and production AI APIs.",
+      },
       { property: "og:title", content: "C Yuva Teja — Generative AI Engineer Portfolio" },
-      { property: "og:description", content: "Portfolio of C Yuva Teja, a Generative AI Engineer building RAG systems, local LLM products, and production AI APIs." },
+      {
+        property: "og:description",
+        content:
+          "Portfolio of C Yuva Teja, a Generative AI Engineer building RAG systems, local LLM products, and production AI APIs.",
+      },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
